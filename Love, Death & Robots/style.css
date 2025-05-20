@@ -1,82 +1,82 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
-    color: white;
-    background-color: black;
-    overflow: hidden;
+  color: white;
+  background-color: black;
+  overflow: hidden;
 }
 header {
-    width: 100%;
-    height: 4rem;
+  width: 100%;
+  height: 4rem;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    position: fixed;
-    padding: 0 2rem;
+  position: fixed;
+  padding: 0 2rem;
 }
 main {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .loading {
-    width: 25rem;
-    height: 20rem;
+  width: 25rem;
+  height: 20rem;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 
-    position: relative;
+  position: relative;
 }
 #love {
-    width: 90%;
-    height: auto;
+  width: 90%;
+  height: auto;
 }
 #death {
-    width: 90%;
-    height: 90%;
+  width: 90%;
+  height: 90%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-end;
 
-    position: relative;
+  position: relative;
 }
 #death #rec {
-    width: 12rem;
-    height: 2.5rem;
+  width: 12rem;
+  height: 2.5rem;
 
-    position: absolute;
-    background-color: white;
-    transform: rotate(45deg);
+  position: absolute;
+  background-color: white;
+  transform: rotate(45deg);
 }
 #death #line {
-    width: 12.5rem;
-    height: 2.5rem;
+  width: 12.5rem;
+  height: 2.5rem;
 
-    position: absolute;
-    background-color: white;
-    transform: rotate(-45deg);
-    border-radius: 20px;
+  position: absolute;
+  background-color: white;
+  transform: rotate(-45deg);
+  border-radius: 20px;
 }
 #mouth {
-    width: 90%;
-    height: 3rem;
+  width: 90%;
+  height: 3rem;
 
-    grid-column: 1/3;
-    align-self: flex-end;
-    justify-self: center;
+  grid-column: 1/3;
+  align-self: flex-end;
+  justify-self: center;
 
-    background-color: white;
+  background-color: white;
 }
