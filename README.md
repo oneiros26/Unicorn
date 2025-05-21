@@ -14,7 +14,7 @@
 
 ## Dvorak - React ⚛️
 
-- Technologies: React and Vite
+- Technologies: React and Vite with TypeScript
 - Description: Webpage comparing the Dvorak and Qwerty keyboard layouts. Main goal is to learn how to build websites with React.
 
 
