@@ -1,10 +1,10 @@
-function Button({ onClick }) {
+function Button({ onClick, children }) {
   return (
     <button
       onClick={onClick}
-      className="w-40 h-30 hover:bg-rose-500/80 cursor-pointer animate-bounce duration-250 shadow-xl medium text-3xl font-mono bg-rose-500 text-white rounded-md"
+      className="w-40 h-15 hover:bg-rose-500/80 cursor-pointer animation-delay-2000 animate-bounce shadow-xl medium text-3xl font-mono bg-rose-500 text-white rounded-md"
     >
-      +1
+      {children}
     </button>
   );
 }
