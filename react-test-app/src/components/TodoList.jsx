@@ -3,6 +3,8 @@ import ConfirmButton from "./ConfirmButton";
 import DeleteButton from "./DeleteButton";
 import GenericButton from "./GenericButton";
 import Checkbox from "./Checkbox";
+import Heading2 from "./Heading2";
+import DefaultContainer from "./DefaultContainer";
 
 function TodoList() {
   const [tasks, setTasks] = useState([
@@ -11,7 +13,6 @@ function TodoList() {
     "Set color to #abc123",
   ]);
   const [newTask, setNewTask] = useState("");
-  const [checkedBoxes, setCheckedBoxes] = useState([]);
 
   function handleInputChange(e) {
     setNewTask(e.target.value);
@@ -56,8 +57,8 @@ function TodoList() {
   //   }
 
   return (
-    <section className="flex flex-col justify-between items-center h-64 gap-2">
-      <h2 className="text-4xl font-bold">Todo List</h2>
+    <DefaultContainer>
+      <Heading2>To-Do List</Heading2>
       <ol className="w-full h-full mb-2 overflow-y-scroll overflow-x-hidden">
         {tasks.map((task, index) => (
           <li key={index} className="flex gap-2 items-center justify-between">
@@ -87,7 +88,7 @@ function TodoList() {
         ></input>
         <ConfirmButton onClick={addTask} />
       </div>
-    </section>
+    </DefaultContainer>
   );
 }
 

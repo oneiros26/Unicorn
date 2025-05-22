@@ -6,6 +6,7 @@ import Button from "./components/Button";
 import Incrementor from "./components/Incrementor";
 import ColorPicker from "./components/ColorPicker";
 import TodoList from "./components/TodoList";
+import WindowSize from "./components/WindowSize";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Incrementor />
         <ColorPicker />
         <TodoList />
+        <WindowSize />
       </main>
     </>
   );

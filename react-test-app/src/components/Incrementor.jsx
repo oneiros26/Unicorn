@@ -1,5 +1,6 @@
 import Button from "./Button";
 import React, { useState } from "react";
+import DefaultContainer from "./DefaultContainer";
 
 function Incrementor() {
   const [count, setCount] = useState(0);
@@ -15,18 +16,20 @@ function Incrementor() {
   };
 
   return (
-    <section className="text-center flex flex-col h-64 justify-end">
-      <Button onClick={incrementCount} delay1={true}>
-        +1
-      </Button>
-      <Button onClick={resetCount} delay2={true}>
-        reset
-      </Button>
-      <Button onClick={decrementCount}>-1</Button>
+    <DefaultContainer test={true}>
+      <div className="flex flex-col gap-1">
+        <Button onClick={incrementCount} delay1={true}>
+          +1
+        </Button>
+        <Button onClick={resetCount} delay2={true}>
+          reset
+        </Button>
+        <Button onClick={decrementCount}>-1</Button>
+      </div>
       <p className="w-40 h-15 bg-amber-500 text-white rounded-md flex items-center justify-center text-xl">
         Count: {count}
       </p>
-    </section>
+    </DefaultContainer>
   );
 }
 

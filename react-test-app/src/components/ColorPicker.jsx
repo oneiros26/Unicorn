@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Heading2 from "./Heading2";
+import DefaultContainer from "./DefaultContainer";
 
 function ColorPicker() {
   const [color, setColor] = useState("#7570ff");
@@ -10,8 +12,8 @@ function ColorPicker() {
   }
 
   return (
-    <section className="flex flex-col justify-between items-center h-64">
-      <h2 className="text-4xl font-bold">Color Picker</h2>
+    <DefaultContainer>
+      <Heading2>Color Picker</Heading2>
       <p
         id="color-display"
         className="w-36 h-36 rounded-md flex justify-center items-center text-xl font-light duration-250"
@@ -28,7 +30,7 @@ function ColorPicker() {
           onChange={handleColorChange}
         />
       </div>
-    </section>
+    </DefaultContainer>
   );
 }
 
