@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  font-family: "VT323", monospace;
+}
+
 .anim-delay-sm {
   animation-delay: 100ms;
 }
