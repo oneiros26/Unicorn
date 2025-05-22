@@ -11,7 +11,7 @@ function ColorPicker() {
 
   return (
     <section className="flex flex-col justify-between items-center h-64">
-      <h1 className="text-4xl font-bold">Color Picker</h1>
+      <h2 className="text-4xl font-bold">Color Picker</h2>
       <p
         id="color-display"
         className="w-36 h-36 rounded-md flex justify-center items-center text-xl font-light duration-250"
