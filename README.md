@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Unicorn Internship Projects   <img alt="Unicorn Logo" src="https://unicorn.com/unicorn-logo.png" width="200px" height="auto">
 
 **Each folder contains a different project**
@@ -43,6 +42,3 @@
 
 - Technologies: React and Vite with JavaScript
 - Description: Webpage with a singe button that increments a counter with each click.
-
-
->>>>>>> 2e32ed1d9062d038ec9446fb080b92b0cca9ddc9
