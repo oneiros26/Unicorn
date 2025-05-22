@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 
 function ColorPicker() {
-  const [color, setColor] = useState("#FFFFFF");
+  const [color, setColor] = useState("#7570ff");
 
   function handleColorChange(e) {
     setColor(e.target.value);
+    const colorDisplay = document.getElementById("color-display");
+    colorDisplay.classList.toggle("rotate-360");
   }
 
   return (
-    <div className="flex flex-col justify-between items-center h-64">
+    <section className="flex flex-col justify-between items-center h-64">
       <h1 className="text-4xl font-bold">Color Picker</h1>
       <p
-        className="w-36 h-36 rounded-md flex justify-center items-center text-xl font-light"
+        id="color-display"
+        className="w-36 h-36 rounded-md flex justify-center items-center text-xl font-light duration-250"
         style={{ backgroundColor: color }}
       >
         {color}
@@ -25,7 +28,7 @@ function ColorPicker() {
           onChange={handleColorChange}
         />
       </div>
-    </div>
+    </section>
   );
 }
 
