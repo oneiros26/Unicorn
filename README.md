@@ -20,4 +20,9 @@
 ## react-test-app ⚛️🍪
 
 - Technologies: React and Vite with JavaScript
-- Description: Webpage with a singe button that increments a counter with each click & a working color picker.
+- Description: Webpage showcasing what I learned in React through-out the week.  
+  1. Simple button count, bounce animation and style with Tailwindcss
+  2. Color picker
+  3. To-do list
+  4. Automated Window size
+  5. Sanitized form
