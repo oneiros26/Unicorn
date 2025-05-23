@@ -17,7 +17,7 @@ function Form() {
       id: 1,
       name: "username",
       type: "text",
-      placeholder: "Username",
+      placeholder: "Enter username..",
       errorMessage:
         "Username needs to be 3-12 characters and should only include letters and numbers.",
       label: "Username",
@@ -28,32 +28,23 @@ function Form() {
       id: 2,
       name: "email",
       type: "email",
-      placeholder: "Email",
+      placeholder: "Enter email..",
       errorMessage: "Invalid email",
-      label: "email",
+      label: "Email",
       required: true,
     },
     {
       id: 3,
       name: "Birthday",
       type: "date",
-      placeholder: "birthday",
       errorMessage: "Users under 18 may not register.",
       label: "Birthday",
     },
     {
       id: 4,
-      name: "sex",
-      type: "radio",
-      placeholder: "",
-      errorMessage: "",
-      label: "sex",
-    },
-    {
-      id: 5,
       name: "password",
       type: "password",
-      placeholder: "Password",
+      placeholder: "Enter password..",
       errorMessage:
         "Passwords should be 8-20 characters and include a number or a special character.",
       label: "Password",
@@ -61,12 +52,12 @@ function Form() {
       required: true,
     },
     {
-      id: 6,
+      id: 5,
       name: "confirmPassword",
       type: "password",
-      placeholder: "Confirm Password",
+      placeholder: "Confirm password..",
       errorMessage: "Passwords do not match.",
-      label: "Confirm Password",
+      label: "Password",
       pattern: formValues.password,
       required: true,
     },
@@ -82,7 +73,7 @@ function Form() {
 
   return (
     <DefaultContainer>
-      <form className="flex flex-col" onSubmit={handleSubmit}>
+      <form className="flex flex-col gap-2 w-64" onSubmit={handleSubmit}>
         {inputs.map((input) => (
           <FormInput
             key={input.id}
@@ -91,7 +82,7 @@ function Form() {
             onChange={onChange}
           />
         ))}
-        <button>Submit</button>
+        <button className="cursor-pointer">Submit</button>
       </form>
     </DefaultContainer>
   );

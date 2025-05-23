@@ -9,17 +9,17 @@ function FormInput(props) {
   };
 
   return (
-    <>
-      <label>{label}</label>
+    <div className="flex flex-col">
+      <label className="text-xl">{label}</label>
       <input
-        className="input"
+        className="input border-solid border-2 border-gray-500 px-1 rounded-xs"
         {...inputProps}
         onChange={onChange}
         onBlur={handleFocus}
         focused={focused.toString()}
       ></input>
-      <p className="hidden">{errorMessage}</p>
-    </>
+      <p className="hidden text-red-700 text-sm">{errorMessage}</p>
+    </div>
   );
 }
 
