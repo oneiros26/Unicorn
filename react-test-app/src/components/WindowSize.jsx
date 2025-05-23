@@ -21,8 +21,8 @@ function WindowSize() {
   return (
     <section className="flex flex-col justify-center items-center h-64">
       <Heading2>Window Size</Heading2>
-      <p>{width}</p>
-      <p>{height}</p>
+      <p>Width: {width}px</p>
+      <p>Height: {height}px</p>
     </section>
   );
 }

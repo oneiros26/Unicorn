@@ -13,3 +13,7 @@ body {
 .anim-delay-lg {
   animation-delay: 200ms;
 }
+
+.input:invalid[focused="true"] + p {
+  display: block;
+}
